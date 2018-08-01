@@ -1,6 +1,6 @@
 <?php
 
-namespace Shape;
+namespace Shapes;
 
 include_once 'ShapeBase.php';
 
@@ -14,12 +14,12 @@ class Circle extends ShapeBase
         $this->setRadius($radius);
     }
 
-    public function getArea()
+    public function getArea(): float
     {
         return M_PI * pow($this->getRadius(), 2);
     }
 
-    public function getPerimeter()
+    public function getPerimeter(): float
     {
         return 2 * M_PI * $this->getRadius();
     }
@@ -27,7 +27,7 @@ class Circle extends ShapeBase
     /**
      * @return mixed
      */
-    public function getRadius()
+    public function getRadius(): float
     {
         return $this->radius;
     }

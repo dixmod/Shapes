@@ -1,10 +1,16 @@
 <?php
 
-namespace Shape;
+namespace Shapes;
 
 interface ShapeInterface
 {
-    public function getArea();
+    /**
+     * @return mixed
+     */
+    public function getArea(): float;
 
-    public function getPerimeter();
+    /**
+     * @return mixed
+     */
+    public function getPerimeter(): float;
 }

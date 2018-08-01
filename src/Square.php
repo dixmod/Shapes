@@ -1,6 +1,6 @@
 <?php
 
-namespace Shape;
+namespace Shapes;
 
 class Square extends ShapeBase
 {
@@ -8,25 +8,32 @@ class Square extends ShapeBase
     protected $countSides = 4;
     protected $countAngles = 4;
 
+    /**
+     * Square constructor.
+     * @param float $lengthSide
+     */
     public function __construct(float $lengthSide)
     {
         $this->setLengthSide($lengthSide);
     }
 
-    public function getArea()
+    /**
+     * @return float|int
+     */
+    public function getArea(): float
     {
         return pow($this->getLengthSide(), 2);
     }
 
-    public function getPerimeter()
+    public function getPerimeter(): float
     {
         return $this->getLengthSide() * $this->getCountSides();
     }
 
     /**
-     * @return int
+     * @return float
      */
-    public function getLengthSide()
+    public function getLengthSide(): float
     {
         return $this->lengthSide;
     }

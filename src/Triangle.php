@@ -1,6 +1,6 @@
 <?php
 
-namespace Shape;
+namespace Shapes;
 
 class Triangle extends ShapeBase
 {
@@ -8,6 +8,10 @@ class Triangle extends ShapeBase
     protected $countSides = 3;
     protected $countAngles = 3;
 
+    /**
+     * Triangle constructor.
+     * @param mixed ...$lengthsSides
+     */
     public function __construct(...$lengthsSides)
     {
         $this->setLengthsSides($lengthsSides);
@@ -18,19 +22,26 @@ class Triangle extends ShapeBase
      */
     public function getArea(): float
     {
-        return 1/2 * $this->lengthsSides[0] * $this->getHeight();
+        return 1 / 2 * $this->lengthsSides[0] * $this->getHeight();
     }
 
-    public function getHeight(){
+    /**
+     * @return float|int
+     */
+    public function getHeight(): float
+    {
         $halfPerimeter = $this->getPerimeter() / 2;
         return (2 * sqrt($halfPerimeter
-            * abs($halfPerimeter - $this->lengthsSides[0])
-            * abs($halfPerimeter - $this->lengthsSides[1])
-            * abs($halfPerimeter - $this->lengthsSides[2])
-        )) / $this->lengthsSides[0];
+                    * abs($halfPerimeter - $this->lengthsSides[0])
+                    * abs($halfPerimeter - $this->lengthsSides[1])
+                    * abs($halfPerimeter - $this->lengthsSides[2])
+                )) / $this->lengthsSides[0];
     }
 
-    public function getPerimeter()
+    /**
+     * @return float|int
+     */
+    public function getPerimeter(): float
     {
         return array_sum($this->getLengthsSides());
     }

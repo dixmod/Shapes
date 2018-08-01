@@ -1,6 +1,6 @@
 <?php
 
-namespace Shape;
+namespace Shapes;
 
 include_once 'ShapeInterface.php';
 
@@ -12,7 +12,7 @@ abstract class ShapeBase implements ShapeInterface
     /**
      * @return int
      */
-    public function getCountSides()
+    public function getCountSides(): int
     {
         return $this->countSides;
     }
@@ -20,9 +20,8 @@ abstract class ShapeBase implements ShapeInterface
     /**
      * @return int
      */
-    public function getCountAngles()
+    public function getCountAngles(): int
     {
         return $this->countAngles;
     }
 }
-
