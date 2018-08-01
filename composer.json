@@ -1,0 +1,18 @@
+{
+    "name": "dixmod/shapes",
+    "description": "Test package to calculating the area and perimeter of simple geometric shapes",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dixmod",
+            "email": "dixmod@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "dixmod\\": "src"
+        }
+    }
+}
