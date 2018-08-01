@@ -1,6 +1,10 @@
 # Shapes
 Test package to calculating the area and perimeter of simple geometric shapes
 
+# Install
+composer require dixmod/shapes
+
+# Use
 $circle = new \Shapes\Circle(12);
 echo $circle->getArea() . PHP_EOL;
 echo $circle->getPerimeter() . PHP_EOL;
