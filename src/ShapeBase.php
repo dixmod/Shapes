@@ -2,8 +2,6 @@
 
 namespace Dixmod\Shapes;
 
-include_once 'ShapeInterface.php';
-
 abstract class ShapeBase implements ShapeInterface
 {
     protected $countSides = 0;

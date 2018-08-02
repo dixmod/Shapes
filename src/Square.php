@@ -2,8 +2,6 @@
 
 namespace Dixmod\Shapes;
 
-include_once 'ShapeBase.php';
-
 class Square extends ShapeBase
 {
     private $lengthSide = 0;

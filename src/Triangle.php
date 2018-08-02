@@ -2,8 +2,6 @@
 
 namespace Dixmod\Shapes;
 
-include_once 'ShapeBase.php';
-
 class Triangle extends ShapeBase
 {
     private $lengthsSides = [0, 0, 0];
