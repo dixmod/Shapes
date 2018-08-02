@@ -2,17 +2,26 @@
 Test package to calculating the area and perimeter of simple geometric shapes
 
 # Install
-composer require dixmod/shapes
+>$ composer require dixmod/shapes
 
 # Use
-$circle = new \Shapes\Circle(12);
+
+```<?php
+
+include 'vendor/autoload.php';
+
+use Dixmod\Shapes\Circle;
+use Dixmod\Shapes\Square;
+use Dixmod\Shapes\Triangle;
+
+$circle = new Circle(12);
 echo $circle->getArea() . PHP_EOL;
 echo $circle->getPerimeter() . PHP_EOL;
 
-$square = new \Shapes\Square(12);
+$square = new Square(12);
 echo $square->getArea() . PHP_EOL;
 echo $square->getPerimeter() . PHP_EOL;
 
-$triangle = new \Shapes\Triangle(15, 4, 4);
+$triangle = new Triangle(15, 4, 4);
 echo $triangle->getArea() . PHP_EOL;
-echo $triangle->getPerimeter() . PHP_EOL;
+echo $triangle->getPerimeter() . PHP_EOL;`
