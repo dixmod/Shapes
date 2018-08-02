@@ -1,8 +1,10 @@
 <?php
 
-namespace Shapes;
+namespace Dixmod\Shapes;
 
-class Square extends BaseShape
+include_once 'ShapeBase.php';
+
+class Square extends ShapeBase
 {
     private $lengthSide = 0;
     protected $countSides = 4;

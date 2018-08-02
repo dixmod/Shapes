@@ -1,6 +1,6 @@
 <?php
 
-namespace Shapes;
+namespace Dixmod\Shapes;
 
 interface ShapeInterface
 {

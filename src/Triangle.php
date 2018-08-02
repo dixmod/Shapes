@@ -1,8 +1,10 @@
 <?php
 
-namespace Shapes;
+namespace Dixmod\Shapes;
 
-class Triangle extends BaseShape
+include_once 'ShapeBase.php';
+
+class Triangle extends ShapeBase
 {
     private $lengthsSides = [0, 0, 0];
     protected $countSides = 3;

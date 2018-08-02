@@ -1,8 +1,10 @@
 <?php
 
-namespace Shapes;
+namespace Dixmod\Shapes;
 
-class Circle extends BaseShape
+include_once 'ShapeBase.php';
+
+class Circle extends ShapeBase
 {
     private $radius;
 
