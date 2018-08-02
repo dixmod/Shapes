@@ -2,7 +2,7 @@
 
 namespace Shapes;
 
-class Square extends ShapeBase
+class Square extends BaseShape
 {
     private $lengthSide = 0;
     protected $countSides = 4;

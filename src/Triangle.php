@@ -2,7 +2,7 @@
 
 namespace Shapes;
 
-class Triangle extends ShapeBase
+class Triangle extends BaseShape
 {
     private $lengthsSides = [0, 0, 0];
     protected $countSides = 3;

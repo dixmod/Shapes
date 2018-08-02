@@ -2,10 +2,7 @@
 
 namespace Shapes;
 
-include_once 'ShapeBase.php';
-
-
-class Circle extends ShapeBase
+class Circle extends BaseShape
 {
     private $radius;
 
