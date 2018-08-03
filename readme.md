@@ -6,8 +6,7 @@ Test package to calculating the area and perimeter of simple geometric shapes
 
 # Use
 
-```<?php
-
+```php
 include 'vendor/autoload.php';
 
 use Dixmod\Shapes\Circle;
