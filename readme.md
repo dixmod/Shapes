@@ -6,7 +6,7 @@ Test package to calculating the area and perimeter of simple geometric shapes
 
 # Use
 
-```<?php
+```php
 
 include 'vendor/autoload.php';
 
@@ -24,4 +24,8 @@ echo $square->getPerimeter() . PHP_EOL;
 
 $triangle = new Triangle(15, 4, 4);
 echo $triangle->getArea() . PHP_EOL;
-echo $triangle->getPerimeter() . PHP_EOL;`
+echo $triangle->getPerimeter() . PHP_EOL;
+```
+
+# Run tests
+>$ phpunit --bootstrap vendor/autoload.php tests/TestShapes.php
