@@ -10,12 +10,17 @@ Test package to calculating the area and perimeter of simple geometric shapes
 include 'vendor/autoload.php';
 
 use Dixmod\Shapes\Circle;
+use Dixmod\Shapes\Rectangle;
 use Dixmod\Shapes\Square;
 use Dixmod\Shapes\Triangle;
 
 $circle = new Circle(12);
 echo $circle->getArea() . PHP_EOL;
 echo $circle->getPerimeter() . PHP_EOL;
+
+$rectangle = new Rectangle(12, 10);
+echo $rectangle->getArea() . PHP_EOL;
+echo $rectangle->getPerimeter() . PHP_EOL;
 
 $square = new Square(12);
 echo $square->getArea() . PHP_EOL;

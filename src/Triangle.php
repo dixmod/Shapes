@@ -4,17 +4,18 @@ namespace Dixmod\Shapes;
 
 class Triangle extends ShapeBase
 {
-    private $lengthsSides = [0, 0, 0];
     protected $countSides = 3;
     protected $countAngles = 3;
 
     /**
      * Triangle constructor.
-     * @param mixed ...$lengthsSides
+     * @param $lengthsSidesA
+     * @param $lengthsSidesB
+     * @param $lengthsSidesC
      */
-    public function __construct(...$lengthsSides)
+    public function __construct($lengthsSidesA, $lengthsSidesB, $lengthsSidesC)
     {
-        $this->setLengthsSides($lengthsSides);
+        $this->setLengthsSides([$lengthsSidesA, $lengthsSidesB, $lengthsSidesC]);
     }
 
     /**
@@ -36,29 +37,5 @@ class Triangle extends ShapeBase
                     * abs($halfPerimeter - $this->lengthsSides[1])
                     * abs($halfPerimeter - $this->lengthsSides[2])
                 )) / $this->lengthsSides[0];
-    }
-
-    /**
-     * @return float|int
-     */
-    public function getPerimeter(): float
-    {
-        return array_sum($this->getLengthsSides());
-    }
-
-    /**
-     * @return array
-     */
-    public function getLengthsSides(): array
-    {
-        return $this->lengthsSides;
-    }
-
-    /**
-     * @param array $lengthsSides
-     */
-    public function setLengthsSides(array $lengthsSides)
-    {
-        $this->lengthsSides = $lengthsSides;
     }
 }

@@ -5,6 +5,7 @@ declare(strict_types=1);
 include_once './vendor/autoload.php';
 
 use Dixmod\Shapes\Circle;
+use Dixmod\Shapes\Rectangle;
 use Dixmod\Shapes\Square;
 use Dixmod\Shapes\Triangle;
 use PHPUnit\Framework\TestCase;
@@ -12,6 +13,7 @@ use PHPUnit\Framework\TestCase;
 final class TestShapes extends TestCase
 {
     private $circle;
+    private $rectangle;
     private $square;
     private $triangle;
 
@@ -19,6 +21,7 @@ final class TestShapes extends TestCase
     {
         parent::__construct();
         $this->circle = new Circle(10);
+        $this->rectangle = new Rectangle(12, 10);
         $this->square = new Square(12);
         $this->triangle = new Triangle(15, 4, 4);
     }
@@ -31,6 +34,16 @@ final class TestShapes extends TestCase
     public function testCirclePerimeter()
     {
         $this->assertEquals($this->circle->getPerimeter(), 62.831853071796);
+    }
+
+    public function testRectangleArea()
+    {
+        $this->assertEquals($this->rectangle->getArea(), 120);
+    }
+
+    public function testRectanglePerimeter()
+    {
+        $this->assertEquals($this->rectangle->getPerimeter(), 44.0);
     }
 
     public function testSquareArea()
