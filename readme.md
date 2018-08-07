@@ -9,24 +9,37 @@ Test package to calculating the area and perimeter of simple geometric shapes
 ```php
 include 'vendor/autoload.php';
 
-use Dixmod\Shapes\Circle;
-use Dixmod\Shapes\Rectangle;
-use Dixmod\Shapes\Square;
-use Dixmod\Shapes\Triangle;
+use Dixmod\Shapes\{
+    Circle,
+    Rectangle,
+    Square,
+    Triangle
+};
 
-$circle = new Circle(12);
+$circle = new Circle(
+    10 // radius
+);
 echo $circle->getArea() . PHP_EOL;
 echo $circle->getPerimeter() . PHP_EOL;
 
-$rectangle = new Rectangle(12, 10);
+$rectangle = new Rectangle(
+    12, // length side A
+    10  // length side B
+);
 echo $rectangle->getArea() . PHP_EOL;
 echo $rectangle->getPerimeter() . PHP_EOL;
 
-$square = new Square(12);
+$square = new Square(
+    12 // length side
+);
 echo $square->getArea() . PHP_EOL;
 echo $square->getPerimeter() . PHP_EOL;
 
-$triangle = new Triangle(15, 4, 4);
+$triangle = new Triangle(
+    15, // length side A
+    4,  // length side B
+    4   // length side C
+);
 echo $triangle->getArea() . PHP_EOL;
 echo $triangle->getPerimeter() . PHP_EOL;
 ```

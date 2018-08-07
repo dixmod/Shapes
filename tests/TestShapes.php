@@ -24,10 +24,25 @@ final class TestShapes extends TestCase
     public function __construct()
     {
         parent::__construct();
-        $this->circle = new Circle(10);
-        $this->rectangle = new Rectangle(12, 10);
-        $this->square = new Square(12);
-        $this->triangle = new Triangle(15, 4, 4);
+
+        $this->circle = new Circle(
+            10 // radius
+        );
+
+        $this->rectangle = new Rectangle(
+            12, // length side A
+            10  // length side B
+        );
+
+        $this->square = new Square(
+            12 // length side
+        );
+
+        $this->triangle = new Triangle(
+            15, // length side A
+            4,  // length side B
+            4   // length side C
+        );
     }
 
     public function testCircleArea()
