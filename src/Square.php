@@ -10,6 +10,9 @@ class Square extends Rectangle
      */
     public function __construct(float $lengthSide)
     {
-        $this->setLengthsSides(array_fill(0, $this->getCountSides(), $lengthSide));
+        parent::__construct(
+            $lengthSide,
+            $lengthSide
+        );
     }
 }
