@@ -19,6 +19,7 @@ final class TestShapes extends TestCase
     private $rectangle;
     private $square;
     private $triangle;
+    private const DELTA = 0.5;
 
     public function __construct()
     {
@@ -31,41 +32,41 @@ final class TestShapes extends TestCase
 
     public function testCircleArea()
     {
-        $this->assertEquals($this->circle->getArea(), 314.15926535898);
+        $this->assertEquals($this->circle->getArea(), 314, '', self::DELTA);
     }
 
     public function testCirclePerimeter()
     {
-        $this->assertEquals($this->circle->getPerimeter(), 62.831853071796);
+        $this->assertEquals($this->circle->getPerimeter(), 62.8, '', self::DELTA);
     }
 
     public function testRectangleArea()
     {
-        $this->assertEquals($this->rectangle->getArea(), 120);
+        $this->assertEquals($this->rectangle->getArea(), 120, '', self::DELTA);
     }
 
     public function testRectanglePerimeter()
     {
-        $this->assertEquals($this->rectangle->getPerimeter(), 44.0);
+        $this->assertEquals($this->rectangle->getPerimeter(), 44, '', self::DELTA);
     }
 
     public function testSquareArea()
     {
-        $this->assertEquals($this->square->getArea(), 144);
+        $this->assertEquals($this->square->getArea(), 144, '', self::DELTA);
     }
 
     public function testSquarePerimeter()
     {
-        $this->assertEquals($this->square->getPerimeter(), 48.0);
+        $this->assertEquals($this->square->getPerimeter(), 48, '', self::DELTA);
     }
 
     public function testTriangleArea()
     {
-        $this->assertEquals($this->triangle->getArea(), 47.5821657766857);
+        $this->assertEquals($this->triangle->getArea(), 47.5, '', self::DELTA);
     }
 
     public function testTrianglePerimeter()
     {
-        $this->assertEquals($this->triangle->getPerimeter(), 23);
+        $this->assertEquals($this->triangle->getPerimeter(), 23, '', self::DELTA);
     }
 }
