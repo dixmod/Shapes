@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Dixmod\Shapes;
 
 class Triangle extends ShapeBase
@@ -15,7 +17,11 @@ class Triangle extends ShapeBase
      */
     public function __construct($lengthsSidesA, $lengthsSidesB, $lengthsSidesC)
     {
-        $this->setLengthsSides([$lengthsSidesA, $lengthsSidesB, $lengthsSidesC]);
+        $this->setLengthsSides([
+            $lengthsSidesA,
+            $lengthsSidesB,
+            $lengthsSidesC,
+        ]);
     }
 
     /**

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Dixmod\Shapes;
 
 abstract class ShapeBase implements ShapeInterface
@@ -11,7 +13,7 @@ abstract class ShapeBase implements ShapeInterface
     /**
      * @return int
      */
-    public function getCountSides(): int
+    protected function getCountSides(): int
     {
         return $this->countSides;
     }
@@ -19,7 +21,7 @@ abstract class ShapeBase implements ShapeInterface
     /**
      * @return int
      */
-    public function getCountAngles(): int
+    protected function getCountAngles(): int
     {
         return $this->countAngles;
     }
@@ -27,7 +29,7 @@ abstract class ShapeBase implements ShapeInterface
     /**
      * @param array $lengthsSides
      */
-    public function setLengthsSides(array $lengthsSides)
+    protected function setLengthsSides(array $lengthsSides)
     {
         $this->lengthsSides = array_slice($lengthsSides, 0, $this->getCountSides());
     }
@@ -35,7 +37,7 @@ abstract class ShapeBase implements ShapeInterface
     /**
      * @return array
      */
-    public function getLengthsSides(): array
+    protected function getLengthsSides(): array
     {
         return $this->lengthsSides;
     }

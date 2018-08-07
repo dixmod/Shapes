@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Dixmod\Shapes;
 
 class Circle extends ShapeBase
