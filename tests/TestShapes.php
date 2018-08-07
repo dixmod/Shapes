@@ -4,10 +4,13 @@ declare(strict_types=1);
 
 include_once './vendor/autoload.php';
 
-use Dixmod\Shapes\Circle;
-use Dixmod\Shapes\Rectangle;
-use Dixmod\Shapes\Square;
-use Dixmod\Shapes\Triangle;
+use Dixmod\Shapes\{
+    Circle,
+    Rectangle,
+    Square,
+    Triangle
+};
+
 use PHPUnit\Framework\TestCase;
 
 final class TestShapes extends TestCase
