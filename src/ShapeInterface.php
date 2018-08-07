@@ -1,16 +1,18 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Dixmod\Shapes;
 
 interface ShapeInterface
 {
     /**
-     * @return mixed
+     * @return float
      */
     public function getArea(): float;
 
     /**
-     * @return mixed
+     * @return float
      */
     public function getPerimeter(): float;
 }

@@ -14,11 +14,16 @@ class Rectangle extends ShapeBase
      */
     public function __construct(float $lengthSideA, float $lengthSideB)
     {
-        $this->setLengthsSides([$lengthSideA, $lengthSideB, $lengthSideA, $lengthSideB]);
+        $this->setLengthsSides([
+            $lengthSideA,
+            $lengthSideB,
+            $lengthSideA,
+            $lengthSideB
+        ]);
     }
 
     /**
-     * @return float|int
+     * @return float
      */
     public function getArea(): float
     {

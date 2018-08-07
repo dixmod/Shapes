@@ -41,7 +41,7 @@ abstract class ShapeBase implements ShapeInterface
     }
 
     /**
-     * @return float|int
+     * @return float
      */
     public function getPerimeter(): float
     {

@@ -22,7 +22,7 @@ class Circle extends ShapeBase
     }
 
     /**
-     * @return mixed
+     * @return float
      */
     public function getRadius(): float
     {
